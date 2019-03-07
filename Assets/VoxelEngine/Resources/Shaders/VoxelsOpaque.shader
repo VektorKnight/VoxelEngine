@@ -1,9 +1,11 @@
 ﻿Shader "Custom/VoxelsOpaque" {
 	Properties {
-		_Color ("Color", Color) = (1,1,1,1)
-		_MainTex ("Albedo (RGB)", 2D) = "white" {}
-		_Glossiness ("Smoothness", Range(0,1)) = 0.5
-		_Metallic ("Metallic", Range(0,1)) = 0.0
+		_MainTex ("Albedo Atlas", 2D) = "white" {}
+		_EmitTex ("Emission Atlas", 2D) = "black" {}
+		_MetalTex ("Metallic Atlas", 2D) = "black" {}
+		_SmoothTex ("Smoothness Atlas", 2D) = "black" {}
+		[HDR]_SkyLight ("Sky Light Color", Color) = (1,1,1,1)
+		[HDR]_BlockLight ("Block Light Color", Color) = (1,1,1,1)
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -14,12 +16,23 @@
 		#pragma surface surf Standard noambient fullforwardshadows vertex:vert
 
 		// Use shader model 3.0 target, to get nicer looking lighting
-		#pragma target 3.0
+		#pragma target 4.0
 
+		// Texture interpolators
 		sampler2D _MainTex;
+		sampler2D _SmoothTex;
+		sampler2D _MetalTex;
+		sampler2D _EmitTex;
+
+		// Voxel light
+		fixed4 _SkyLight;
+		fixed4 _BlockLight;
 
 		struct Input {
 			float2 uv_MainTex;
+			float2 uv2_EmitTex;
+			float2 uv3_MetalTex;
+			float2 uv4_SmoothTex;
 			float3 vertexColor;
 		};
 
@@ -34,26 +47,36 @@
              o.vertexColor = v.color;
          }
 
-		half _Glossiness;
-		half _Metallic;
-		fixed4 _Color;
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
-		// #pragma instancing_options assumeuniformscaling
+		#pragma instancing_options assumeuniformscaling
 		UNITY_INSTANCING_BUFFER_START(Props)
 			// put more per-instance properties here
 		UNITY_INSTANCING_BUFFER_END(Props)
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {
-			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			o.Albedo = c.rgb;
-			o.Emission = c.rgb * fixed3(1,1,1) * IN.vertexColor.r;
-			// Metallic and smoothness come from slider variables
-			o.Metallic = _Metallic;
-			o.Smoothness = _Glossiness;
-			o.Alpha = c.a;
+			// Extract and calculate voxel light from vertex colors
+			fixed3 voxelLight = lerp(_SkyLight.rgb * max(IN.vertexColor.r, 0.1), _BlockLight.rgb * IN.vertexColor.g, IN.vertexColor.g / max(IN.vertexColor.r, 1));
+
+			// Extract and set albedo from atlas
+			fixed4 albedo = tex2D (_MainTex, IN.uv_MainTex);
+			o.Albedo = albedo.rgb;
+
+			// Extract and set emission from atlas and voxel light 
+			fixed3 emission = tex2D(_EmitTex, IN.uv2_EmitTex);
+			o.Emission = emission.rgb + albedo.rgb * voxelLight;
+
+			// Extract and set metallicity from atlas
+			fixed metallic = Luminance(tex2D(_MetalTex, IN.uv3_MetalTex));
+			o.Metallic = metallic;
+
+			// Extract and set smoothness from atlas
+			fixed smoothness = Luminance(tex2D(_SmoothTex, IN.uv4_SmoothTex));
+			o.Smoothness = smoothness;
+
+			// Set alpha to albedo alpha
+			o.Alpha = albedo.a;
 		}
 		ENDCG
 	}

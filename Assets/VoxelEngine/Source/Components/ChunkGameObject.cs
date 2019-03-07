@@ -1,114 +1,126 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VoxelEngine.Chunks;
-using VoxelEngine.MeshGeneration;
+using VoxelEngine.Chunks.MeshGeneration;
 
-namespace VoxelEngine {
+namespace VoxelEngine.Components {
     /// <summary>
     /// Represents a chunk in the Unity game world.
     /// Wraps the VoxelChunk object.
     /// </summary>
-    [RequireComponent(typeof(MeshFilter))]
-    [RequireComponent(typeof(MeshRenderer))]
-    [RequireComponent(typeof(MeshCollider))]
-    public class ChunkGameObject : MonoBehaviour {
-        // World Object and Chunk References
-        private WorldGameObject _worldObject;
+    public class ChunkGameObject : MonoBehaviour {     
+        // Chunk Reference & Data
+        private Vector2Int _chunkPos;
         private Chunk _chunk;
         
-        // Required References
-        private MeshFilter _meshFilter;
-        private MeshCollider _meshCollider;
+        // Required Sub-Mesh Objects
+        [SerializeField] private ChunkMeshObject _solid;
+        [SerializeField] private ChunkMeshObject _nonSolid;
         
         // Mesh Data
-        private Mesh _visualMesh;
-        private Mesh _colliderMesh;
-        
+        private Mesh _solidMesh;
+        private Mesh _nonSolidMesh;
+
         // Latest Job
         private int _latestJob;
-        
-        // State
-        private bool _pendingInitialMesh;
+        private bool _waitingForLight;
         
         // Initialization
-        public void Initialize(WorldGameObject worldObject, Chunk chunk) {
-            // Assign world object and chunk references
-            _worldObject = worldObject;
-            _chunk = chunk;
+        public void Initialize(Vector2Int chunkPos) {
+            // Reference chunk from the world system
+            _chunk = WorldSystem.Instance.VoxelWorld.TryGetChunk(chunkPos, true);
             
-            _meshFilter = GetComponent<MeshFilter>();
-            _meshCollider = GetComponent<MeshCollider>();
+            // Initialize mesh sub-objects
+            _solid.Initialize(_chunk);
+            _nonSolid.Initialize(_chunk);
+            
+            // Initialize meshes
+            _solidMesh = new Mesh();
+            _nonSolidMesh = new Mesh();
+            
+            // Register with the chunk update event
             _chunk.OnChunkUpdate += OnChunkUpdate;
-            _pendingInitialMesh = true;
         }
         
         /// <summary>
         /// Chunk update event handler.
         /// </summary>
-        public void OnChunkUpdate() {
+        private void OnChunkUpdate() {
             // Create a chunk mesh job and dispatch it to the world object
-            _latestJob = _latestJob + 1;
-            _worldObject.MeshJobs.Add(new MeshJob(_latestJob + 1, WorldGameObject.World, _chunk, OnMeshComplete));
+            WorldSystem.Instance.UpdateJobs.Add(new ChunkUpdateJob(_latestJob, WorldSystem.Instance.VoxelWorld, _chunk, OnMeshComplete, null));
         }
         
         /// <summary>
         /// Processes mesh result data and updates the mesh renderer and collider.
         /// </summary>
-        /// <param name="result"></param>
-        public void OnMeshComplete(MeshResult result) {
+        private void OnMeshComplete(ChunkMeshResult result) {
             // Discard results from outdated jobs
-            if (result.Id < _latestJob) return;
+            if (result.Id != _latestJob) return;
             
-            // Create or clear the visual mesh object
-            if (_visualMesh == null) {
-                _visualMesh = new Mesh {
-                    vertices = result.Vertices, 
-                    colors = result.Colors,
-                    triangles = new int[result.Triangles.Length], 
-                    uv = result.UVs
-                    
+            // Update solid mesh and sub-object
+            UpdateMeshData(_solidMesh, result.Solid);
+            _solid.UpdateMesh(_solidMesh);
+            
+            // Update non-solid mesh and sub-object
+            UpdateMeshData(_nonSolidMesh, result.NonSolid);
+            _nonSolid.UpdateMesh(_nonSolidMesh);
+            
+            // Flag chunk light as dirty when we receive a mesh update
+            // TODO: This is currently done to avoid missed light updates
+            _chunk.IsLightDirty = true;
+            _latestJob++;
+        }
+
+        private void UpdateMeshData(Mesh mesh, MeshData data) {
+            // Create a new mesh object if null
+            if (mesh == null) {
+                mesh = new Mesh {
+                    vertices = data.Vertices, 
+                    uv = data.Uv0,
+                    uv2 = data.Uv1,
+                    uv3 = data.Uv2,
+                    uv4 = data.Uv3,
+                    colors = data.VertexColors
                 };
             }
+            
+            // Update the existing mesh
             else {
-                _visualMesh.Clear();
-                _visualMesh.vertices = result.Vertices;
-                _visualMesh.colors = result.Colors;
-                _visualMesh.triangles = new int[result.Triangles.Length];
-                _visualMesh.uv = result.UVs;
+                mesh.Clear();
+                mesh.vertices = data.Vertices;
+                mesh.uv = data.Uv0;
+                mesh.uv2 = data.Uv1;
+                mesh.uv3 = data.Uv2;
+                mesh.uv4 = data.Uv3;
+                mesh.colors = data.VertexColors;
             }
             
-            // Parse submesh data into proper indices
-            var submeshData = new Dictionary<int, List<int>>();    
-            foreach (var triangleIndex in result.Triangles) {
-                if (!submeshData.ContainsKey(triangleIndex.SubmeshIndex)) {
-                    submeshData.Add(triangleIndex.SubmeshIndex, new List<int>());
-                }     
-                submeshData[triangleIndex.SubmeshIndex].Add(triangleIndex.VertexIndex);
-            }
-            
-            // Set triangles based on submesh data
-            _visualMesh.subMeshCount = submeshData.Count + 1;
-            foreach (var kvp in submeshData) {
-                _visualMesh.SetTriangles(kvp.Value, kvp.Key);
+            // Set triangles and sub-meshes based on data
+            mesh.subMeshCount = data.Triangles.Length;
+            for (var i = 0; i < data.Triangles.Length; i++) {
+                mesh.SetTriangles(data.Triangles[i], i);
             }
             
             // Calculate normals
-            _visualMesh.RecalculateNormals();
-            
-            // Update mesh renderer and collider references
-            //if (_meshFilter.mesh == null || _meshFilter.mesh != _visualMesh) 
-                _meshFilter.sharedMesh = _visualMesh;
-            
-            //if (_meshCollider.sharedMesh == null || _meshCollider.sharedMesh != _visualMesh) 
-                _meshCollider.sharedMesh = _visualMesh;
+            mesh.RecalculateNormals();
+            mesh.RecalculateTangents();
+            mesh.RecalculateBounds();
+            mesh.UploadMeshData(false);
+            mesh.MarkDynamic();
         }
         
         // Unity Update
-        private void Update() {
-            // Request generation on initial mesh as soon as we can
-            if (_pendingInitialMesh && _chunk.Initialized) {
-                OnChunkUpdate();
-                _pendingInitialMesh = false;
+        private void Update() {     
+            // Check if the chunk mesh is dirty and invoke an update
+            if (_chunk.IsMeshDirty) _chunk.Update();
+            
+            // Update mesh vertex colors if light is dirty
+            if (_chunk.IsLightDirty) {
+                lock (_chunk) {
+                    _solid.UpdateVertexColors();
+                    _nonSolid.UpdateVertexColors();
+                    _chunk.IsLightDirty = false;
+                }
             }
             
             if (Input.GetKeyDown(KeyCode.F5)) {

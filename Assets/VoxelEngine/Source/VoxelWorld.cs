@@ -3,7 +3,9 @@ using System.Collections.Concurrent;
 using UnityEngine;
 using VoxelEngine.Biomes;
 using VoxelEngine.Chunks;
+using VoxelEngine.Threading;
 using VoxelEngine.Utility;
+using VoxelEngine.Voxels;
 
 namespace VoxelEngine {
     public class VoxelWorld {
@@ -55,20 +57,15 @@ namespace VoxelEngine {
         /// <summary>
         /// Generates and returns a height map for a given chunk at world x, y.
         /// </summary>
-        public int[,] GetChunkHeightMap(int chunkX, int chunkY) {
-            // Initialize the new height map
-            var heightMap = new int[Chunk.CHUNK_LENGTH, Chunk.CHUNK_LENGTH];
-            
+        public void PopulateChunkHeightMap(int chunkX, int chunkY, int[] heightMap) {        
             // Populate height map values
             PopulateHeightMapGauss(heightMap, chunkX, chunkY, 2);
-
-            return heightMap;
         }
         
         /// <summary>
         /// Populates a height map using gaussian-filtered samples from source noise.
         /// </summary>
-        private void PopulateHeightMapGauss(int[,] map, int chunkX, int chunkY, int blurSize) {
+        private void PopulateHeightMapGauss(int[] map, int chunkX, int chunkY, int blurSize) {
             for (var x = 0; x < Chunk.CHUNK_LENGTH; x++) {
                 for (var y = 0; y < Chunk.CHUNK_LENGTH; y++) {
                     // Horizontal Gaussian
@@ -86,7 +83,7 @@ namespace VoxelEngine {
                     v += GetNoiseValue(x + chunkX, y + chunkY + (blurSize * -2)) * 0.192077f;
 
                     var final = (h + v) / 2f;
-                    map[x, y] = Mathf.FloorToInt((final + 1.0f) / 2.0f * (Chunk.CHUNK_HEIGHT / 2f));
+                    map[x + y * Chunk.CHUNK_LENGTH] = Mathf.FloorToInt((final + 1.0f) / 2.0f * (Chunk.CHUNK_HEIGHT / 2f));
                 }
             }
         }
@@ -111,15 +108,25 @@ namespace VoxelEngine {
             return _biomes[biomeValue];
         }
         
+        
+        #region Chunk Functions
         /// <summary>
-        /// Returns the chunk containing the given world position if possible.
+        /// Returns the chunk at the given position if it is loaded.
         /// Returns null if the chunk is not loaded.
-        /// Use GetOrLoadChunk if you want the chunk to be loaded automatically.
         /// </summary>
-        public Chunk TryGetChunk(Vector3Int worldPos) {
+        public Chunk TryGetChunk(Vector2Int chunkPos, bool loadIfUnloaded = false) {
+            // Convert world coordinate to chunk coordinate
+            return _chunkMap.ContainsKey(chunkPos) ? _chunkMap[chunkPos] : loadIfUnloaded ? LoadChunk(chunkPos) : null;
+        }
+        
+        /// <summary>
+        /// Returns the chunk containing the given world position if it is loaded.
+        /// Returns null if the chunk is not loaded.
+        /// </summary>
+        public Chunk TryGetChunk(Vector3Int worldPos, bool loadIfUnloaded = false) {
             // Convert world coordinate to chunk coordinate
             var chunkPos = new Vector2Int(worldPos.x >> Chunk.CHUNK_LENGTH_LOG, worldPos.z >> Chunk.CHUNK_LENGTH_LOG);
-            return _chunkMap.ContainsKey(chunkPos) ? _chunkMap[chunkPos] : null;
+            return TryGetChunk(chunkPos);
         }
         
         /// <summary>
@@ -139,33 +146,25 @@ namespace VoxelEngine {
         }
         
         /// <summary>
-        /// Tries to return the chunk at the specified chunk position.
+        /// Tries to load the chunk at the specified chunk position.
         /// </summary>
-        public Chunk GetOrLoadChunk(Vector2Int chunkPos) {
+        public Chunk LoadChunk(Vector2Int chunkPos) {
+            // Throw an exception if the chunk is already loaded
             if (_chunkMap.ContainsKey(chunkPos)) {
-                return _chunkMap[chunkPos];
+                throw new ChunkLoadException($"Tried to load a chunk that was already loaded.");
             }
             
             var chunk = _chunkMap.GetOrAdd(chunkPos, new Chunk(this, chunkPos));
-            if (!chunk.Initialized) chunk.Initialize(this);
-            return chunk;
-        }
-        
-        /// <summary>
-        /// Tries to return the chunk at the specified chunk position.
-        /// </summary>
-        public Chunk GetOrLoadChunk(Vector3Int worldPos) {
-            // Convert world coordinate to chunk coordinate
-            var chunkPos = new Vector2Int(worldPos.x >> Chunk.CHUNK_LENGTH_LOG, worldPos.z >> Chunk.CHUNK_LENGTH_LOG);
-            if (_chunkMap.ContainsKey(chunkPos)) {
-                return _chunkMap[chunkPos];
+            if (!chunk.Initialized) {
+                TaskManager.Instance.PushTask(() => {
+                    chunk.Initialize();
+                }); 
             }
-            
-            var chunk = _chunkMap.GetOrAdd(chunkPos, new Chunk(this, chunkPos));
-            if (!chunk.Initialized) chunk.Initialize(this);
             return chunk;
         }
+        #endregion
         
+        #region Voxel Functions
         /// <summary>
         /// Tries to return the voxel at a given fixed-point world position.
         /// This will result in a chunk load if the voxel is contained within an unloaded chunk.
@@ -178,21 +177,21 @@ namespace VoxelEngine {
             // Calculate chunk position
             var chunkPosition = new Vector2Int(voxelPos.x >> Chunk.CHUNK_LENGTH_LOG, voxelPos.z >> Chunk.CHUNK_LENGTH_LOG);
             
-            // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            // Try to reference the chunk   
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return air if the chunk is null (not loaded)
+            if (chunk == null) return new Voxel(0);
 
+            // Lock the chunk and return the voxel
             lock (chunk) {
-                // Determine the voxels local position using the chunk's transform matrix
-                var voxelLocal = new Vector3Int(voxelPos.x - chunk.WorldPosition.x, voxelPos.y, voxelPos.z - chunk.WorldPosition.y);
-
                 // Return the voxel
-                return chunk.GetVoxel(voxelLocal);
+                return chunk.GetVoxel(chunk.WorldToLocal(voxelPos));
             }
         }
         
         /// <summary>
         /// Tries to return the voxel at a given floating-point world position.
-        /// This will result in a chunk load if the voxel is contained within an unloaded chunk.
         /// </summary>
         public Voxel GetVoxel(Vector3 worldPos) {
             // Round floating-point position to fixed position
@@ -209,25 +208,27 @@ namespace VoxelEngine {
         /// </summary>
         /// <param name="voxelPos"></param>
         /// <param name="voxel"></param>
-        public void SetVoxel(Vector3Int voxelPos, Voxel voxel) {
-            if (voxelPos.y >= Chunk.CHUNK_HEIGHT || voxelPos.y < 0) {
-                return;
-            }
+        public bool TrySetVoxel(Vector3Int voxelPos, Voxel voxel) {
+            // Return false if the voxel is outside the vertical range (0-255)
+            if (voxelPos.y >= Chunk.CHUNK_HEIGHT || voxelPos.y < 0) return false;
             
             // Calculate chunk position
             var chunkPosition = new Vector2Int(voxelPos.x >> Chunk.CHUNK_LENGTH_LOG, voxelPos.z >> Chunk.CHUNK_LENGTH_LOG);
             
-            // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            // Try to reference the chunk   
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return false if the chunk is not loaded
+            if (chunk == null) return false;
 
+            // Lock the chunk and set the voxel
             lock (chunk) {
-                // Determine the voxels local position using the chunk's transform matrix
-                var voxelLocal = new Vector3Int(voxelPos.x - chunk.WorldPosition.x, voxelPos.y, voxelPos.z - chunk.WorldPosition.y);
-
-                // Return the voxel
-                chunk.SetVoxel(new Vector3Int(voxelLocal.x, voxelLocal.y, voxelLocal.z), voxel);
+                // Set the voxel
+                chunk.QueueVoxelUpdate(chunk.WorldToLocal(voxelPos), voxel);
+                return true;
             }
         }
+        #endregion
         
         #region Lighting Functions
         /// <summary>
@@ -238,7 +239,10 @@ namespace VoxelEngine {
             var chunkPosition = new Vector2Int(pos.x >> Chunk.CHUNK_LENGTH_LOG, pos.z >> Chunk.CHUNK_LENGTH_LOG);
             
             // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return 0 if the chunk is not loaded
+            if (chunk == null) return 0;
             
             // Return the light value
             var localPos = new Vector3Int(pos.x - chunk.WorldPosition.x, pos.y, pos.z - chunk.WorldPosition.y);
@@ -248,17 +252,20 @@ namespace VoxelEngine {
         /// <summary>
         /// Sets sunlight value for a particular voxel.
         /// </summary>
-        public Chunk SetSunlight(Vector3Int pos, int val) {
+        public bool TrySetSunlight(Vector3Int pos, int val) {
             // Calculate chunk position
             var chunkPosition = new Vector2Int(pos.x >> Chunk.CHUNK_LENGTH_LOG, pos.z >> Chunk.CHUNK_LENGTH_LOG);
             
             // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return 0 if the chunk is not loaded
+            if (chunk == null) return false;
             
             // Set the light value
             var localPos = new Vector3Int(pos.x - chunk.WorldPosition.x, pos.y, pos.z - chunk.WorldPosition.y);
             chunk.SetSunlight(localPos, val);
-            return chunk;
+            return true;
         }
         
         /// <summary>
@@ -269,7 +276,10 @@ namespace VoxelEngine {
             var chunkPosition = new Vector2Int(pos.x >> Chunk.CHUNK_LENGTH_LOG, pos.z >> Chunk.CHUNK_LENGTH_LOG);
             
             // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return 0 if the chunk is not loaded
+            if (chunk == null) return 0;
             
             // Return the light value
             var localPos = new Vector3Int(pos.x - chunk.WorldPosition.x, pos.y, pos.z - chunk.WorldPosition.y);
@@ -279,17 +289,20 @@ namespace VoxelEngine {
         /// <summary>
         /// Sets block light value for a particular voxel.
         /// </summary>
-        public Chunk SetBlockLight(Vector3Int pos, int val, bool addNode = true) {
+        public bool TrySetBlockLight(Vector3Int pos, int val) {
             // Calculate chunk position
             var chunkPosition = new Vector2Int(pos.x >> Chunk.CHUNK_LENGTH_LOG, pos.z >> Chunk.CHUNK_LENGTH_LOG);
             
             // Reference the chunk
-            var chunk = GetOrLoadChunk(chunkPosition);
+            var chunk = TryGetChunk(chunkPosition);
+            
+            // Return 0 if the chunk is not loaded
+            if (chunk == null) return false;
             
             // Set the light value
             var localPos = new Vector3Int(pos.x - chunk.WorldPosition.x, pos.y, pos.z - chunk.WorldPosition.y);
-            chunk.SetBlockLight(localPos, val, addNode);
-            return chunk;
+            chunk.SetBlockLight(localPos, val);
+            return true;
         }
         #endregion
     }

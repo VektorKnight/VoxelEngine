@@ -1,7 +1,7 @@
 using UnityEngine;
 using VoxelEngine.Voxels;
 
-namespace VoxelEngine {
+namespace VoxelEngine.Components {
     public class PlayerInteraction : MonoBehaviour {
         public LayerMask Mask;
         
@@ -14,7 +14,7 @@ namespace VoxelEngine {
                     var hitPoint = hit.point + (Camera.main.transform.forward * 0.25f);
                     var voxelPos = new Vector3Int(Mathf.RoundToInt(hitPoint.x), Mathf.RoundToInt(hitPoint.y), Mathf.RoundToInt(hitPoint.z));
                     
-                    WorldGameObject.World.SetVoxel(voxelPos, new Voxel(0));
+                    WorldSystem.Instance.VoxelWorld.TrySetVoxel(voxelPos, new Voxel(0));
                 }
             }
             
@@ -26,7 +26,7 @@ namespace VoxelEngine {
                     var hitPoint = hit.point;
                     var voxelPos = new Vector3Int(Mathf.RoundToInt(hitPoint.x + hit.normal.x * 0.6f), Mathf.RoundToInt(hitPoint.y + hit.normal.y * 0.5f), Mathf.RoundToInt(hitPoint.z + hit.normal.z * 0.5f));
                     
-                    WorldGameObject.World.SetVoxel(voxelPos, new Voxel(MaterialDictionary.DataByName("glowstone").Id));
+                    WorldSystem.Instance.VoxelWorld.TrySetVoxel(voxelPos, new Voxel(VoxelDictionary.IdByName("light_stone_lamp")));
                 }
             }
         }

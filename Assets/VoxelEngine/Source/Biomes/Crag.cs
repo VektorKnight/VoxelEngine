@@ -45,18 +45,18 @@ namespace VoxelEngine.Biomes {
 
         public Voxel GetVoxelAtHeight(int height, int y) {              
             // Top layer should be grass
-            var id = MaterialDictionary.DataByName("gravel").Id;
+            var id = VoxelDictionary.IdByName("gravel");
 
-            if (y < height - 1) id = MaterialDictionary.DataByName("cobblestone").Id;
+            if (y < height - 1) id = VoxelDictionary.IdByName("cobblestone");
 
-            if (y < height - 2) id = MaterialDictionary.DataByName("stone").Id;
+            if (y < height - 2) id = VoxelDictionary.IdByName("stone");
             
             if (y > height && y <= Chunk.SEA_LEVEL) {
-                id = MaterialDictionary.DataByName("water").Id;
+                id = VoxelDictionary.IdByName("water");
             }
 
             if (y == height && y <= Chunk.SEA_LEVEL) {
-                id = MaterialDictionary.DataByName("sand").Id;
+                id = VoxelDictionary.IdByName("sand");
             }
 
             if (y > height && y > Chunk.SEA_LEVEL) {

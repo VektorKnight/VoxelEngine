@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\derek\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\derek\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_VoxelEngine.905393371.00" t="ExcludeRecursive" />
-    <e p="D:\Documents\Unity Projects\VoxelEngine" t="IncludeRecursive">
+    <e p="C:\Users\derek\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\derek\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_VoxelEngine.-337743814.00" t="ExcludeRecursive" />
+    <e p="E:\Documents\GitHub\VoxelEngine" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -206,7 +206,7 @@
             <e p="FollowTarget.cs" t="Include" />
             <e p="ForcedReset.cs" t="Include" />
             <e p="FOVKick.cs" t="Include" />
-            <e p="FPSCounter.cs" t="Include" />
+            <e p="FpsCounter.cs" t="Include" />
             <e p="LerpControlledBob.cs" t="Include" />
             <e p="ObjectResetter.cs" t="Include" />
             <e p="ParticleSystemDestroyer.cs" t="Include" />
@@ -259,6 +259,9 @@
         <e p="VoxelEngine" t="Include">
           <e p="Resources" t="Include">
             <e p="Shaders" t="Include">
+              <e p="NewSurfaceShader.shader" t="Include" />
+              <e p="VoxelFluid.shader" t="Include" />
+              <e p="VoxelsAlpha.shader" t="Include" />
               <e p="VoxelsOpaque.shader" t="Include" />
             </e>
           </e>
@@ -271,35 +274,40 @@
             </e>
             <e p="Chunks" t="Include">
               <e p="Chunk.cs" t="Include" />
-              <e p="ChunkLightMapper.cs" t="Include" />
-              <e p="LightNode.cs" t="Include" />
-              <e p="LightRemovalNode.cs" t="Include" />
-              <e p="LightSource.cs" t="Include" />
+              <e p="LightMapping" t="Include">
+                <e p="ChunkLightMapper.cs" t="Include" />
+                <e p="ChunkLightResult.cs" t="Include" />
+                <e p="LightNode.cs" t="Include" />
+                <e p="LightSource.cs" t="Include" />
+              </e>
+              <e p="MeshGeneration" t="Include">
+                <e p="ChunkMeshResult.cs" t="Include" />
+                <e p="ChunkUpdateJob.cs" t="Include" />
+                <e p="ChunkUpdateWorker.cs" t="Include" />
+                <e p="MeshData.cs" t="Include" />
+                <e p="TriangleIndex.cs" t="Include" />
+              </e>
+              <e p="VoxelUpdate.cs" t="Include" />
             </e>
             <e p="Components" t="Include">
               <e p="ChunkGameObject.cs" t="Include" />
+              <e p="ChunkMeshObject.cs" t="Include" />
               <e p="PlayerInteraction.cs" t="Include" />
-              <e p="WorldGameObject.cs" t="Include" />
+              <e p="RenderDepthTexture.cs" t="Include" />
+              <e p="WorldSystem.cs" t="Include" />
             </e>
-            <e p="MeshGeneration" t="Include">
-              <e p="MarchingCubes" t="Include">
-                <e p="MarchingCubesExtractor.cs" t="Include" />
-                <e p="MarchingCubesTables.cs" t="Include" />
-              </e>
-              <e p="MeshJob.cs" t="Include" />
-              <e p="MeshResult.cs" t="Include" />
-              <e p="SimpleCubes" t="Include">
-                <e p="ChunkUpdateWorker.cs" t="Include" />
-              </e>
-              <e p="TriangleIndex.cs" t="Include" />
+            <e p="Exceptions.cs" t="Include" />
+            <e p="Textures" t="Include">
+              <e p="RuntimeTextureAtlas.cs" t="Include" />
             </e>
-            <e p="Shaders" t="Include">
-              <e p="StandardTriplanar.shader" t="Include" />
+            <e p="Threading" t="Include">
+              <e p="TaskManager.cs" t="Include" />
+              <e p="TaskWorker.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">
               <e p="DebugSystem.cs" t="Include" />
               <e p="DevReadout.cs" t="Include" />
-              <e p="FPSCounter.cs" t="Include" />
+              <e p="FpsCounter.cs" t="Include" />
               <e p="MathUtil.cs" t="Include" />
               <e p="Windows Console" t="Include">
                 <e p="ConsoleInput.cs" t="Include" />
@@ -307,15 +315,13 @@
               </e>
             </e>
             <e p="Voxels" t="Include">
-              <e p="MaterialData.cs" t="Include" />
-              <e p="MaterialDictionary.cs" t="Include" />
-              <e p="MaterialType.cs" t="Include" />
+              <e p="RenderType.cs" t="Include" />
               <e p="Voxel.cs" t="Include" />
+              <e p="VoxelDefinition.cs" t="Include" />
+              <e p="VoxelDictionary.cs" t="Include" />
+              <e p="VoxelType.cs" t="Include" />
             </e>
             <e p="VoxelWorld.cs" t="Include" />
-          </e>
-          <e p="TextureTests" t="Include">
-            <e p="Voxel.shader" t="Include" />
           </e>
         </e>
       </e>

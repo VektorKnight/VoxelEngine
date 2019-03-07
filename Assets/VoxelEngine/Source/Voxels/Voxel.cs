@@ -1,7 +1,6 @@
 ﻿using System.Runtime.InteropServices;
-using VoxelEngine.Voxels;
 
-namespace VoxelEngine {
+namespace VoxelEngine.Voxels {
 	/// <summary>
 	/// Represents a single voxel in a chunk.
 	/// </summary>
@@ -11,8 +10,12 @@ namespace VoxelEngine {
 		public readonly ushort Id;
 		
 		// Voxel material type and transparency flag
-		public readonly MaterialType Type;
-		public readonly bool IsTransparent;
+		public readonly VoxelType VoxelType;
+		public readonly RenderType RenderType;
+		
+		// Voxel light source and attenuation
+		public readonly int LightValue;
+		public readonly int Attenuation;
 		
 		/// <summary>
 		/// Creates a new voxel with the specified properties.
@@ -20,8 +23,10 @@ namespace VoxelEngine {
 		/// <param name="id">Material ID of the voxel.</param>
 		public Voxel(ushort id) {
 			Id = id;
-			Type = MaterialDictionary.DataById(id).Type;
-			IsTransparent = MaterialDictionary.DataById(id).IsTransparent;
+			VoxelType = VoxelDictionary.VoxelData[id].VoxelType;
+			RenderType = VoxelDictionary.VoxelData[id].RenderType;
+			LightValue = VoxelDictionary.VoxelData[id].LightValue;
+			Attenuation = VoxelDictionary.VoxelData[id].Attenuation;
 		}
 	}
 }

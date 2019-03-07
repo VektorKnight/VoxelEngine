@@ -1,4 +1,5 @@
 using UnityEngine;
+using VoxelEngine.Voxels;
 
 namespace VoxelEngine.Biomes {
     public interface IBiome {
