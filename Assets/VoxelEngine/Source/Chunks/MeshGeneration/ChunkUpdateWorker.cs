@@ -137,39 +137,40 @@ namespace VoxelEngine.Chunks.MeshGeneration {
                     GenerateMeshData(updateJob.Chunk, VoxelType.Solid);
                     
                     // Store generated data and clear work buffers
-                    var solid = new MeshData {
-                        Vertices = _vertices.ToArray(),
-                        Triangles = new [] {_triangles[0].ToArray(), _triangles[1].ToArray(), _triangles[2].ToArray(), _triangles[3].ToArray()},
-                        Uv0 = _uv0.ToArray(),
-                        Uv1 = _uv1.ToArray(),
-                        Uv2 = _uv2.ToArray(),
-                        Uv3 = _uv3.ToArray(),
-                        VertexColors = _vertexColors.ToArray()
-                    };
+                    var solid = new MeshData (
+                        _vertices.ToArray(),
+                        new [] {_triangles[0].ToArray(), _triangles[1].ToArray(), _triangles[2].ToArray(), _triangles[3].ToArray()},
+                        _uv0.ToArray(),
+                        _uv1.ToArray(),
+                        _uv2.ToArray(),
+                        _uv3.ToArray(),
+                        _vertexColors.ToArray()
+                    );
                     ClearWorkBuffers();
                     
                     // Generate mesh data for non-solid voxels
                     GenerateMeshData(updateJob.Chunk, VoxelType.Liquid);
                     
                     // Store generated data and clear work buffers
-                    var nonSolid = new MeshData {
-                        Vertices = _vertices.ToArray(),
-                        Triangles = new [] {_triangles[0].ToArray(), _triangles[1].ToArray(), _triangles[2].ToArray(), _triangles[3].ToArray()},
-                        Uv0 = _uv0.ToArray(),
-                        Uv1 = _uv1.ToArray(),
-                        Uv2 = _uv2.ToArray(),
-                        Uv3 = _uv3.ToArray(),
-                        VertexColors = _vertexColors.ToArray()
-                    };
+                    var nonSolid = new MeshData (
+                        _vertices.ToArray(),
+                        new [] {_triangles[0].ToArray(), _triangles[1].ToArray(), _triangles[2].ToArray(), _triangles[3].ToArray()},
+                        _uv0.ToArray(),
+                        _uv1.ToArray(),
+                        _uv2.ToArray(),
+                        _uv3.ToArray(),
+                        _vertexColors.ToArray()
+                    );
+                    
                     ClearWorkBuffers();
                     
                     // Compile results and enqueue to main
-                    var result = new ChunkMeshResult {
-                        Id = updateJob.Id,
-                        Solid = solid,
-                        NonSolid = nonSolid,
-                        Callback = updateJob.MeshCallback
-                    };
+                    var result = new ChunkMeshResult (
+                        updateJob.Id,
+                        solid,
+                        nonSolid,
+                        updateJob.MeshCallback
+                    );
                     
                     // Clear chunk buffer
                     ClearChunkBuffer();
@@ -307,7 +308,7 @@ namespace VoxelEngine.Chunks.MeshGeneration {
         /// <summary>
         /// Adds relevant faces for a single voxel.
         /// </summary>
-        private void ProcessVoxel(Chunk chunk, Vector3Int voxelPos, VoxelType voxelType) {
+        private void ProcessVoxel(Chunk chunk, in Vector3Int voxelPos, VoxelType voxelType) {
             // Reference the current voxel
             var voxel = chunk.GetVoxel(voxelPos);
             
@@ -464,11 +465,11 @@ namespace VoxelEngine.Chunks.MeshGeneration {
             _rowsToUpdate.Clear();
         }
         
-        private Vector3Int WorldToMapLocal(Vector3Int world) {
+        private Vector3Int WorldToMapLocal(in Vector3Int world) {
             return new Vector3Int(world.x - _mapWorldOrigin.x, world.y, world.z - _mapWorldOrigin.y);
         }
         
-        private Vector3Int MapLocalToWorld(Vector3Int world) {
+        private Vector3Int MapLocalToWorld(in Vector3Int world) {
             return new Vector3Int(world.x + _mapWorldOrigin.x, world.y, world.z + _mapWorldOrigin.y);
         }
     }

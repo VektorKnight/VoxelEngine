@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 namespace VoxelEngine.Chunks.LightMapping {
-    public struct ChunkLightResult {
+    public readonly struct ChunkLightResult {
         public readonly int Id;
         public readonly Action<ChunkLightResult> LightCallback;
 

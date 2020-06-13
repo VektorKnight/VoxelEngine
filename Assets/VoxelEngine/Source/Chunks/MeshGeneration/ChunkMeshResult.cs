@@ -2,15 +2,22 @@ using System;
 using UnityEngine;
 
 namespace VoxelEngine.Chunks.MeshGeneration {
-    public struct ChunkMeshResult {
+    public readonly struct ChunkMeshResult {
         // Job ID
-        public int Id;
+        public readonly int Id;
         
         // Mesh Data
-        public MeshData Solid;
-        public MeshData NonSolid;
+        public readonly MeshData Solid;
+        public readonly MeshData NonSolid;
         
         // Callback
-        public Action<ChunkMeshResult> Callback;
+        public readonly Action<ChunkMeshResult> Callback;
+
+        public ChunkMeshResult(int id, MeshData solid, MeshData nonSolid, Action<ChunkMeshResult> callback) {
+            Id = id;
+            Solid = solid;
+            NonSolid = nonSolid;
+            Callback = callback;
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace VoxelEngine.Threading {
             threadCount = threadCount > 0 ? threadCount : 1;
             
             // Initialize blocking collection
-            _tasks = new BlockingCollection<Action>(new ConcurrentStack<Action>());
+            _tasks = new BlockingCollection<Action>(new ConcurrentQueue<Action>());
             
             // Initialize worker array and workers
             _taskWorkers = new TaskWorker[threadCount];

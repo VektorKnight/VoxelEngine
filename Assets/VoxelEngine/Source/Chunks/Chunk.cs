@@ -112,8 +112,7 @@ namespace VoxelEngine.Chunks {
             lock (this) {
                 // Process all queued voxel updates
                 while (_voxelEdits.Count > 0) {
-                    VoxelUpdate update;
-                    if (!_voxelEdits.TryDequeue(out update)) continue;
+                    if (!_voxelEdits.TryDequeue(out var update)) continue;
                     SetVoxel(update.Position, update.Voxel);
                 }
 
@@ -193,7 +192,7 @@ namespace VoxelEngine.Chunks {
             }
         }
         
-        public void QueueVoxelUpdate(Vector3Int pos, Voxel voxel) {
+        public void QueueVoxelUpdate(in Vector3Int pos, in Voxel voxel) {
             QueueVoxelUpdate(new VoxelUpdate(pos, voxel));
         }
 
@@ -203,7 +202,7 @@ namespace VoxelEngine.Chunks {
         /// Chunk update event is invoked by default and should only be changed
         /// under special circumstances.
         /// </summary>
-        private void SetVoxel(Vector3Int pos, Voxel voxel) {
+        private void SetVoxel(in Vector3Int pos, in Voxel voxel) {
             // Disallow editing of bedrock voxels
             if (_voxels[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)].Id == VoxelDictionary.IdByName("bedrock")) return;
             
@@ -250,14 +249,14 @@ namespace VoxelEngine.Chunks {
         /// <summary>
         /// Gets sunlight value for a particular voxel.
         /// </summary>
-        public int GetSunlight(Vector3Int pos) {
+        public int GetSunlight(in Vector3Int pos) {
             return (_lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)] >> 4) & 0xF;
         }
         
         /// <summary>
         /// Sets sunlight value for a particular voxel.
         /// </summary>
-        public void SetSunlight(Vector3Int pos, int val) {
+        public void SetSunlight(in Vector3Int pos, int val) {
             _lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)]
                 = (byte) ((_lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)] & 0xF) | (val << 4));
         }
@@ -274,14 +273,14 @@ namespace VoxelEngine.Chunks {
         /// <summary>
         /// Gets block light value for a particular voxel.
         /// </summary>
-        public int GetBlockLight(Vector3Int pos) {
+        public int GetBlockLight(in Vector3Int pos) {
             return _lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)] & 0xF;
         }
         
         /// <summary>
         /// Sets block light value for a particular voxel.
         /// </summary>
-        public void SetBlockLight(Vector3Int pos, int val) {
+        public void SetBlockLight(in Vector3Int pos, int val) {
             // Set light value
             _lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)]
                 = (byte) ((_lightMap[pos.x + CHUNK_LENGTH * (pos.y + CHUNK_HEIGHT * pos.z)] & 0xF0) | (byte) val);

@@ -114,7 +114,7 @@ namespace VoxelEngine {
         /// Returns the chunk at the given position if it is loaded.
         /// Returns null if the chunk is not loaded.
         /// </summary>
-        public Chunk TryGetChunk(Vector2Int chunkPos, bool loadIfUnloaded = false) {
+        public Chunk TryGetChunk(in Vector2Int chunkPos, bool loadIfUnloaded = false) {
             // Convert world coordinate to chunk coordinate
             return _chunkMap.ContainsKey(chunkPos) ? _chunkMap[chunkPos] : loadIfUnloaded ? LoadChunk(chunkPos) : null;
         }
@@ -123,7 +123,7 @@ namespace VoxelEngine {
         /// Returns the chunk containing the given world position if it is loaded.
         /// Returns null if the chunk is not loaded.
         /// </summary>
-        public Chunk TryGetChunk(Vector3Int worldPos, bool loadIfUnloaded = false) {
+        public Chunk TryGetChunk(in Vector3Int worldPos, bool loadIfUnloaded = false) {
             // Convert world coordinate to chunk coordinate
             var chunkPos = new Vector2Int(worldPos.x >> Chunk.CHUNK_LENGTH_LOG, worldPos.z >> Chunk.CHUNK_LENGTH_LOG);
             return TryGetChunk(chunkPos);
@@ -139,7 +139,7 @@ namespace VoxelEngine {
         /// <summary>
         /// Determines whether or not the chunk at the specified position is loaded.
         /// </summary>
-        public bool IsChunkLoaded(Vector3Int worldPos) {
+        public bool IsChunkLoaded(in Vector3Int worldPos) {
             // Convert world coordinate to chunk coordinate
             var chunkPos = new Vector2Int(worldPos.x >> Chunk.CHUNK_LENGTH_LOG, worldPos.z >> Chunk.CHUNK_LENGTH_LOG);
             return _chunkMap.ContainsKey(chunkPos);
@@ -148,7 +148,7 @@ namespace VoxelEngine {
         /// <summary>
         /// Tries to load the chunk at the specified chunk position.
         /// </summary>
-        public Chunk LoadChunk(Vector2Int chunkPos) {
+        public Chunk LoadChunk(in Vector2Int chunkPos) {
             // Throw an exception if the chunk is already loaded
             if (_chunkMap.ContainsKey(chunkPos)) {
                 throw new ChunkLoadException($"Tried to load a chunk that was already loaded.");

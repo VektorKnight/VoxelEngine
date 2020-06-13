@@ -1,416 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="34f3bfb6-3350-4fad-bf5e-9d9ae2745037" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VoxelEngine/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Main_Profiles/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Main_Profiles/Main Camera Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Common/ChunkObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Common/ChunkObject.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Common/DebugReadout.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Common/DebugReadout.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Materials/ChunkBorder.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Materials/ChunkBorder.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/bedrock.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/bedrock.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/bedrock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/bedrock.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/cobblestone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/cobblestone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/cobblestone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/cobblestone.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/dirt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/dirt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/dirt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/dirt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_side.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_side.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_side.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_side.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_top.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_top.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/grass_top.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/gravel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/gravel.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/sand.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/sand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/sand.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/sand.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/stone.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/stone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/stone.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Textures/stone.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Crag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Crag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/IBiome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/IBiome.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Ocean.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Ocean.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Sprites/LogoUnitySprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Sprites/LogoUnitySprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Sprites/MenuCornerTopRightSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Menu/Sprites/MenuCornerTopRightSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Textures/GUIReticle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Textures/GUIReticle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/PlatformWhiteSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/PlatformWhiteSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyRollSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyRollSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyRunSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyRunSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowOverSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowOverSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonSpacebarSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonSpacebarSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderHandleSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/SliderHandleSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/TouchpadSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/Sprites/TouchpadSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ChunkLightMapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ChunkLightMapper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightRemovalNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightRemovalNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightSource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldGameObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes/MarchingCubesExtractor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes/MarchingCubesExtractor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes/MarchingCubesTables.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes/MarchingCubesTables.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MeshJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MeshJob.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MeshResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MeshResult.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/SimpleCubes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/SimpleCubes/ChunkUpdateWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/SimpleCubes/ChunkUpdateWorker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/TriangleIndex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/TriangleIndex.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Shaders/StandardTriplanar.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Shaders/StandardTriplanar.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/DebugSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/DebugSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelUpdate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialDictionary.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialDictionary.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/Voxel.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/Voxel.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/Voxel.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/Voxel.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/WaterSimple.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/WaterSimple.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/terrain_atlas_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/terrain_atlas_0.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VoxelEngine/TextureTests.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="68" column="73" selection-start-line="68" selection-start-column="73" selection-end-line="68" selection-end-column="73" />
-              <folding>
-                <marker date="1549346167708" expanded="false" signature="6:119" ph="..." />
-                <marker date="1549346167708" expanded="true" signature="154:4665" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="160:281" ph="/// Represents a chunk in the Unity game world. ... " />
-                <marker date="1549346167708" expanded="true" signature="331:4663" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="883:1405" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="1423:1499" ph="/// Chunk update event handler. ... " />
-                <marker date="1549346167708" expanded="true" signature="1537:1767" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="1785:1904" ph="/// Processes mesh result data and updates the mesh renderer and collider. ... " />
-                <marker date="1549346167708" expanded="true" signature="1965:2631" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="2423:2555" ph="/* Flag chunk light as dirty when we receive a mesh update ... */" />
-                <marker date="1549346167708" expanded="true" signature="2695:3943" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="2775:3080" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="2809:3065" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="3133:3439" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="3626:3698" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="4007:4657" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="4245:4460" ph="{...}" />
-                <marker date="1549346167708" expanded="true" signature="4520:4647" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding>
-                <marker date="1549065312503" expanded="false" signature="6:52" ph="..." />
-                <marker date="1549065312503" expanded="true" signature="98:425" ph="{...}" />
-                <marker date="1549065312503" expanded="true" signature="127:423" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5070">
-              <caret line="173" column="35" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-              <folding>
-                <marker date="1549402402181" expanded="true" signature="64:8267" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="70:591" ph="/// Contains definitions and name-id mappings for all voxels in an instance of the game. ... " />
-                <marker date="1549402402181" expanded="true" signature="632:8265" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="804:909" ph="/// Returns the numerical ID linked to the given voxel name. ... " />
-                <marker date="1549402402181" expanded="true" signature="961:1017" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="1035:1229" ph="/// Initializes the voxel dictionary, registers the internal voxels, ... " />
-                <marker date="1549402402181" expanded="true" signature="1285:1517" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="1535:1643" ph="/// Registers all internal voxel definitions for the base game. ... " />
-                <marker date="1549402402181" expanded="true" signature="1697:8259" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="1821:7963" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="1882:2144" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="2224:2576" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="2655:3001" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="3081:3667" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="3746:4164" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="4245:4634" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="4720:5116" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="5196:5528" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="5616:5956" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="6038:6400" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="6486:6915" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="7008:7503" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="7583:7949" ph="{...}" />
-                <marker date="1549402402181" expanded="true" signature="8109:8249" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-              <folding>
-                <marker date="1551125132767" expanded="false" signature="6:282" ph="..." />
-                <marker date="1551125132767" expanded="true" signature="317:4808" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="323:364" ph="///  ... " />
-                <marker date="1551125132767" expanded="true" signature="410:4806" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="1277:1737" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="1807:2892" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="2666:2767" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="2954:3006" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3070:3872" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3239:3311" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3497:3576" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3651:3862" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3718:3848" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="3960:4800" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="4125:4758" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="4255:4547" ph="{...}" />
-                <marker date="1551125132767" expanded="true" signature="4636:4703" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/RuntimeTextureAtlas.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="170" column="12" selection-start-line="170" selection-start-column="12" selection-end-line="170" selection-end-column="24" />
-              <folding>
-                <marker date="1551123839222" expanded="false" signature="6:92" ph="..." />
-                <marker date="1551123839222" expanded="true" signature="125:11443" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="131:232" ph="/// Generates a texture atlas from individual texture per block. ... " />
-                <marker date="1551123839222" expanded="true" signature="270:11441" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="1416:2741" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="2759:2915" ph="/// Tries to fetch the texture from the cache before loading from disk. ... " />
-                <marker date="1551123839222" expanded="true" signature="2970:3535" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="3237:3450" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="3553:3631" ph="/// Generates the texture atlases ... " />
-                <marker date="1551123839222" expanded="true" signature="3669:11435" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="3780:8842" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="4777:6916" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="4913:6898" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="5302:5730" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="5730:6225" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="6916:8828" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="7397:7817" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="7817:8195" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="9489:10179" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="9738:10165" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="10421:10531" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="10587:10725" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="10781:10919" ph="{...}" />
-                <marker date="1551123839222" expanded="true" signature="10977:11115" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13140">
-              <caret line="460" column="25" selection-start-line="460" selection-start-column="25" selection-end-line="460" selection-end-column="25" />
-              <folding>
-                <marker date="1551125131932" expanded="false" signature="6:268" ph="..." />
-                <marker date="1551125131932" expanded="true" signature="314:21972" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="320:480" ph="/// Generates a cubic mesh from a given chunk using naive meshing. ... " />
-                <marker date="1551125131932" expanded="true" signature="516:21970" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="607:916" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="1008:1192" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="1301:1541" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="1843:2037" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="3624:3882" ph="/// Creates a new simple cubes mesh extraction worker. ... " />
-                <marker date="1551125131932" expanded="true" signature="4019:4564" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="4582:4650" ph="/// Worker thread loop. ... " />
-                <marker date="1551125131932" expanded="true" signature="4683:8938" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="4761:8928" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="4814:8783" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="5265:5736" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="6071:6542" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="6717:6925" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="8820:8882" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="8956:9076" ph="/// Populates chunk buffer with the current chunk and any loaded neighbors. ... " />
-                <marker date="1551125131932" expanded="true" signature="9149:10271" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="9721:10261" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="10313:10438" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="10373:10428" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="10456:10588" ph="/// Generates a cube mesh from a given chunk and world. ... " />
-                <marker date="1551125131932" expanded="true" signature="10661:13967" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="10870:13518" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="10941:13504" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="11016:13486" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="11429:12346" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="11836:12208" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="12208:12320" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="12346:13069" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="13627:13957" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="13690:13943" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="13757:13925" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="13984:14072" ph="/// Adds relevant faces for a single voxel. ... " />
-                <marker date="1551125131932" expanded="true" signature="14162:21171" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="14657:21161" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="15476:16935" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="16183:16917" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="16935:17166" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="17930:19739" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="18091:18412" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="18412:18701" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="19739:20014" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="20116:20669" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="20365:20432" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="21213:21596" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="21367:21414" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="21667:21780" ph="{...}" />
-                <marker date="1551125131932" expanded="true" signature="21851:21964" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <marker date="1549221904794" expanded="true" signature="68:947" ph="{...}" />
-                <marker date="1549221904794" expanded="true" signature="71:143" ph="/// Represents a single voxel in a chunk. ... " />
-                <marker date="1549221904794" expanded="true" signature="204:945" ph="{...}" />
-                <marker date="1549221904794" expanded="true" signature="522:666" ph="/// Creates a new voxel with the specified properties. ... " />
-                <marker date="1549221904794" expanded="true" signature="693:942" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/RenderDepthTexture.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-              <folding>
-                <marker date="1549145135070" expanded="true" signature="53:238" ph="{...}" />
-                <marker date="1549145135070" expanded="true" signature="107:236" ph="{...}" />
-                <marker date="1549145135070" expanded="true" signature="141:230" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-              <folding>
-                <marker date="1549514816457" expanded="false" signature="6:56" ph="..." />
-                <marker date="1549514816457" expanded="true" signature="87:1708" ph="{...}" />
-                <marker date="1549514816457" expanded="true" signature="93:648" ph="/// Holds all general data for a particular voxel. ... " />
-                <marker date="1549514816457" expanded="true" signature="682:1706" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <marker date="1549060589687" expanded="false" signature="6:126" ph="..." />
-                <marker date="1549060589687" expanded="true" signature="170:17601" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="176:258" ph="/// Handles lighting calculations for chunks. ... " />
-                <marker date="1549060589687" expanded="true" signature="293:17599" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="545:785" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="894:1044" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="1493:1847" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="1865:1987" ph="/// Updates the light map for a given chunk belonging to the specified world. ... " />
-                <marker date="1549060589687" expanded="true" signature="2059:4720" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="2632:2867" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="3004:3982" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="3712:3968" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="4098:4178" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="4397:4696" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="4449:4678" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="4505:4656" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="4738:4860" ph="/// Updates the light map for a given chunk belonging to the specified world. ... " />
-                <marker date="1549060589687" expanded="true" signature="4930:9816" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="5530:6070" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="6215:9280" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="6265:9266" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="7126:7460" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="7628:8612" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="8786:8931" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="8931:9248" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="9497:9792" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="9549:9774" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="9605:9752" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="9834:9932" ph="/// Propagates any light nodes in the addition queue. ... " />
-                <marker date="1549060589687" expanded="true" signature="9992:12444" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="10094:12434" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="10494:12420" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="12099:12402" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="12462:12560" ph="/// Propagates any light nodes in the addition queue. ... " />
-                <marker date="1549060589687" expanded="true" signature="12618:15506" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="12718:15496" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="13102:15482" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="14832:15464" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="14980:15101" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="15101:15307" ph="{...}" />
-                <marker date="1549060589687" expanded="false" signature="15524:17593" ph="Lightmap Functions" />
-                <marker date="1549060589687" expanded="true" signature="15612:15725" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="15735:15827" ph="/// Gets sunlight value for a particular voxel. ... " />
-                <marker date="1549060589687" expanded="true" signature="15875:16004" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="16022:16114" ph="/// Sets sunlight value for a particular voxel. ... " />
-                <marker date="1549060589687" expanded="true" signature="16172:16414" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="16432:16527" ph="/// Gets block light value for a particular voxel. ... " />
-                <marker date="1549060589687" expanded="true" signature="16578:16700" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="16718:16813" ph="/// Sets block light value for a particular voxel. ... " />
-                <marker date="1549060589687" expanded="true" signature="16895:17169" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="17187:17283" ph="/// Clears all block light data from the light map. ... " />
-                <marker date="1549060589687" expanded="true" signature="17319:17574" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="17382:17437" ph="{...}" />
-                <marker date="1549060589687" expanded="true" signature="17509:17564" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -432,60 +109,52 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/DevReadout.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/MathUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/IBiome.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FastNoise Unity/FastNoise/FastNoiseUnity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskWorker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FastNoise Unity/FastNoise/FastNoise.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/IBiome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Crag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FastNoise Unity/FastNoise/FastNoiseUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Ocean.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkMeshObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/RenderDepthTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskWorker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/RuntimeTextureAtlas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FastNoise Unity/FastNoise/FastNoise.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/MathUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/DevReadout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/RenderType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelFluid.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/RenderType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Ocean.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Crag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/RenderDepthTexture.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/RuntimeTextureAtlas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/d0/a2ea6880/ConcurrentQueue`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkMeshObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsAlpha.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/cd/71379f5e/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsAlpha.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightRemovalNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Lightmapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/SimpleCubes/SimpleCubesGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ParallelLightMapper.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightNode.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskWorker.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Dependencies/SystemBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/SimpleCubes/ChunkUpdateWorker.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ChunkLightMapper.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MeshJob.cs" />
@@ -498,21 +167,14 @@
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/AtlasGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialData.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelEdit.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MaterialType.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/MeshType.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/RenderType.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelData.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/CollisionType.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkMeshObject.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsFluid.shader" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelFluid.shader" />
@@ -521,11 +183,23 @@
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" />
-        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/RuntimeTextureAtlas.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs" />
         <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs" />
+        <option value="$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs" />
       </list>
     </option>
   </component>
@@ -540,111 +214,21 @@
     <option name="width" value="1940" />
     <option name="height" value="1100" />
   </component>
+  <component name="ProjectId" id="1dGg8sgTeo9ccGTZR7n9SZTnabZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="FastNoise Unity" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="FastNoise Unity" type="1045f7f1:UnityExplorerNode" />
-              <item name="FastNoise" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
-              <item name="Shaders" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Source" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Source" type="1045f7f1:UnityExplorerNode" />
-              <item name="Components" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Source" type="1045f7f1:UnityExplorerNode" />
-              <item name="Textures" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="VoxelEngine" type="1045f7f1:UnityExplorerNode" />
-              <item name="Source" type="1045f7f1:UnityExplorerNode" />
-              <item name="Voxels" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Packages" type="4e2708dd:PackagesRoot" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Documents/GitHub/VoxelEngine/Assets/VoxelEngine/Source/Chunks/ChunkLightMapperOld.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -718,64 +302,36 @@
       <workItem from="1550024457612" duration="44000" />
       <workItem from="1551123791585" duration="2158000" />
       <workItem from="1551732385577" duration="670000" />
+      <workItem from="1592056694406" duration="369000" />
+      <workItem from="1592057088902" duration="881000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470281000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="3086" height="1702" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.104758754" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Captures" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32929936" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.20012747" />
-      <window_info anchor="bottom" id="Android Profiler" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="16" />
-      <window_info anchor="bottom" id="Logcat" order="17" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="992" y="379" key="RiderGenerateDialog" timestamp="1592057737544">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="992" y="379" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1920.1040/3840.0.1920.1040@0.0.2560.1400" timestamp="1592057737544" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -783,711 +339,7 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs</url>
-          <line>210</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs" initialLine="198">
-            <startOffsets>
-              <option value="9992" />
-            </startOffsets>
-            <endOffsets>
-              <option value="9993" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Stylized Nature Pack/Demo Scene/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/TextureTests/Voxel.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/DebugSystem.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/MeshGeneration/MarchingCubes/MarchingCubesExtractor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/FastNoise Unity/FastNoise/FastNoise.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2854">
-          <caret line="514" column="22" selection-start-line="514" selection-start-column="22" selection-end-line="514" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/TestRemover.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/BiomeBase.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/IBiome.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/MathUtil.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Utility/DevReadout.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightRemovalNode.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ParallelLightMapper.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/ChunkLightMapperOld.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Exceptions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Dependencies/SystemBehavior.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Dependencies/EngineSystem.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskWorker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Threading/TaskManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkLightResult.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <marker date="1548541157943" expanded="false" signature="6:56" ph="..." />
-            <marker date="1548541157943" expanded="true" signature="172:393" ph="{...}" />
-            <marker date="1548541157943" expanded="true" signature="316:387" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/LightSource.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <marker date="1548541157951" expanded="true" signature="94:313" ph="{...}" />
-            <marker date="1548541157951" expanded="true" signature="236:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Crag.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/Ocean.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1124">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Biomes/RollingHills.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="52" column="74" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <marker date="1548792604024" expanded="true" signature="6:32" ph="..." />
-            <marker date="1548792604024" expanded="true" signature="76:375" ph="{...}" />
-            <marker date="1548792604024" expanded="true" signature="113:373" ph="{...}" />
-            <marker date="1548792604024" expanded="true" signature="292:367" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/d0/a2ea6880/ConcurrentQueue`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateJob.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <marker date="1548791188431" expanded="false" signature="6:71" ph="..." />
-            <marker date="1548791188431" expanded="true" signature="117:717" ph="{...}" />
-            <marker date="1548791188431" expanded="true" signature="152:715" ph="{...}" />
-            <marker date="1548791188431" expanded="true" signature="539:709" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/VoxelUpdate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <marker date="1548819819788" expanded="false" signature="6:44" ph="..." />
-            <marker date="1548819819788" expanded="true" signature="75:332" ph="{...}" />
-            <marker date="1548819819788" expanded="true" signature="107:330" ph="{...}" />
-            <marker date="1548819819788" expanded="true" signature="253:324" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsOpaque.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="59" column="170" selection-start-line="59" selection-start-column="170" selection-end-line="59" selection-end-column="170" />
-          <folding>
-            <marker date="1548920758339" expanded="true" signature="29:2579" ph="{...}" />
-            <marker date="1548920758339" expanded="true" signature="43:354" ph="{...}" />
-            <marker date="1548920758339" expanded="true" signature="366:2557" ph="{...}" />
-            <marker date="1548920758339" expanded="true" signature="423:2549" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsAlpha.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1548994000623" expanded="true" signature="42:353" ph="{...}" />
-            <marker date="1548994000623" expanded="true" signature="648:2616" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/TriangleIndex.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <marker date="1548541174365" expanded="true" signature="83:408" ph="{...}" />
-            <marker date="1548541174365" expanded="true" signature="159:406" ph="{...}" />
-            <marker date="1548541174365" expanded="true" signature="309:400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/CollisionType.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <marker date="1549064254448" expanded="true" signature="29:111" ph="{...}" />
-            <marker date="1549064254448" expanded="true" signature="57:109" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkMeshResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <marker date="1549064207831" expanded="false" signature="6:32" ph="..." />
-            <marker date="1549064207831" expanded="true" signature="78:337" ph="{...}" />
-            <marker date="1549064207831" expanded="true" signature="114:335" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/RenderType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <marker date="1549060589639" expanded="true" signature="44:184" ph="{...}" />
-            <marker date="1549060589639" expanded="true" signature="99:182" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelsFluid.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Resources/Shaders/VoxelFluid.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <marker date="1549175199865" expanded="true" signature="4215:4238" ph="{...}" />
-            <marker date="1549175199865" expanded="true" signature="41:218" ph="{...}" />
-            <marker date="1549175199865" expanded="true" signature="4215:4216" ph="{...}" />
-            <marker date="1549175199865" expanded="true" signature="2331:2341" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkMeshObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="86" column="59" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
-          <folding>
-            <marker date="1549137318431" expanded="false" signature="6:78" ph="..." />
-            <marker date="1549137318431" expanded="true" signature="113:5809" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="119:237" ph="/// Represents a mesh containing all voxels in a chunk of s specific render type. ... " />
-            <marker date="1549137318431" expanded="true" signature="420:5807" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="961:2173" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="1559:2081" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="2242:2437" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="2447:2554" ph="/// Updates mesh vertex colors with the latest light map data. ... " />
-            <marker date="1549137318431" expanded="true" signature="2596:5801" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="2653:2741" ph="/* Iterate over the vertex colors of the current mesh ... */" />
-            <marker date="1549137318431" expanded="true" signature="2800:5670" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="3953:5198" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="4541:5180" ph="{...}" />
-            <marker date="1549137318431" expanded="true" signature="5198:5365" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/PlayerInteraction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <marker date="1549220130870" expanded="false" signature="6:44" ph="..." />
-            <marker date="1549220130870" expanded="true" signature="79:1561" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="132:1559" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="204:1553" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="256:836" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="464:822" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="900:1543" ph="{...}" />
-            <marker date="1549220130870" expanded="true" signature="1108:1529" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/Chunk.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4710">
-          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
-          <folding>
-            <marker date="1549514767311" expanded="false" signature="6:115" ph="..." />
-            <marker date="1549514767311" expanded="true" signature="146:11697" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="152:320" ph="/// Represents a single chunk of voxels in the world. ... " />
-            <marker date="1549514767311" expanded="true" signature="344:11695" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="803:1093" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="2194:2273" ph="/// Creates a new chunk of voxels. ... " />
-            <marker date="1549514767311" expanded="true" signature="2334:3265" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="3197:3255" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="3283:3527" ph="/// Initializes the chunk building the voxel data based on heightmap data from the world generator. ... " />
-            <marker date="1549514767311" expanded="true" signature="3561:3957" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="3797:3883" ph="/* Mark chunk as dirty and set initialized flag ... */" />
-            <marker date="1549514767311" expanded="true" signature="3975:4046" ph="/// Forces a chunk update. ... " />
-            <marker date="1549514767311" expanded="true" signature="4076:4546" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="4202:4393" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="4564:4701" ph="/// Handles stone, sea-level water, and eventually caves. ... " />
-            <marker date="1549514767311" expanded="true" signature="4745:5791" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="4798:5781" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="4855:5767" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="4916:5749" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="5569:5681" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="5850:5959" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="6018:6127" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="6145:6248" ph="/// Returns the voxel height at the specified coordinates. ... " />
-            <marker date="1549514767311" expanded="true" signature="6299:6371" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="6389:6578" ph="/// Gets a voxel at the specified position. ... " />
-            <marker date="1549514767311" expanded="true" signature="6625:6719" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="6737:6886" ph="/// Queues a voxel edit to be applied on the next update. ... " />
-            <marker date="1549514767311" expanded="true" signature="6947:7464" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="7137:7454" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="7540:7610" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="7620:7898" ph="/// Sets a voxel at the specified position. ... " />
-            <marker date="1549514767311" expanded="true" signature="7958:9723" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="8383:8905" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="8518:8591" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="8798:8891" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="8905:9198" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="9095:9184" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="9368:9713" ph="{...}" />
-            <marker date="1549514767311" expanded="false" signature="9733:11686" ph="Lightmap Functions" />
-            <marker date="1549514767311" expanded="true" signature="9768:9860" ph="/// Gets sunlight value for a particular voxel. ... " />
-            <marker date="1549514767311" expanded="true" signature="9908:10017" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="10035:10127" ph="/// Sets sunlight value for a particular voxel. ... " />
-            <marker date="1549514767311" expanded="true" signature="10185:10387" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="10405:10501" ph="/// Clears all block light data from the light map. ... " />
-            <marker date="1549514767311" expanded="true" signature="10538:10693" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="10595:10683" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="10711:10806" ph="/// Gets block light value for a particular voxel. ... " />
-            <marker date="1549514767311" expanded="true" signature="10856:10958" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="10976:11071" ph="/// Sets block light value for a particular voxel. ... " />
-            <marker date="1549514767311" expanded="true" signature="11131:11365" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="11383:11479" ph="/// Clears all block light data from the light map. ... " />
-            <marker date="1549514767311" expanded="true" signature="11518:11667" ph="{...}" />
-            <marker date="1549514767311" expanded="true" signature="11575:11657" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/VoxelWorld.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4560">
-          <caret line="159" column="39" selection-start-line="159" selection-start-column="39" selection-end-line="160" selection-end-column="20" />
-          <folding>
-            <marker date="1548820036942" expanded="true" signature="257:12675" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="588:1242" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="978:1148" ph="/* _biomeMap.SetCellularDistanceFunction(FastNoise.CellularDistanceFunction.Natural); ... */" />
-            <marker date="1548820036942" expanded="true" signature="1260:1389" ph="/// Returns the raw noise value from the appropriate biome at the given coordinates. ... " />
-            <marker date="1548820036942" expanded="true" signature="1439:1946" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="1611:1658" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="1695:1742" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="1742:1807" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="1964:2080" ph="/// Generates and returns a height map for a given chunk at world x, y. ... " />
-            <marker date="1548820036942" expanded="true" signature="2165:2292" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="2310:2432" ph="/// Populates a height map using gaussian-filtered samples from source noise. ... " />
-            <marker date="1548820036942" expanded="true" signature="2526:3906" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="2585:3896" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="2648:3882" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="3971:4448" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="4144:4191" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="4228:4275" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="4275:4340" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="4475:6861" ph="Chunk Functions" />
-            <marker date="1548820036942" expanded="true" signature="4507:4665" ph="/// Returns the chunk at the given position if it is loaded. ... " />
-            <marker date="1548820036942" expanded="true" signature="4749:4940" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="4958:5130" ph="/// Returns the chunk containing the given world position if it is loaded. ... " />
-            <marker date="1548820036942" expanded="true" signature="5214:5446" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="5464:5585" ph="/// Determines whether or not the chunk at the specified position is loaded. ... " />
-            <marker date="1548820036942" expanded="true" signature="5641:5704" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="5722:5843" ph="/// Determines whether or not the chunk at the specified position is loaded. ... " />
-            <marker date="1548820036942" expanded="true" signature="5899:6141" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="6159:6264" ph="/// Tries to load the chunk at the specified chunk position. ... " />
-            <marker date="1548820036942" expanded="true" signature="6317:6842" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="6433:6545" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="6676:6806" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="6730:6789" ph="{...}" />
-            <marker date="1548820036942" expanded="false" signature="6879:9571" ph="Voxel Functions" />
-            <marker date="1548820036942" expanded="true" signature="6911:7121" ph="/// Tries to return the voxel at a given fixed-point world position. ... " />
-            <marker date="1548820036942" expanded="true" signature="7173:7915" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="7243:7295" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="7933:8049" ph="/// Tries to return the voxel at a given floating-point world position. ... " />
-            <marker date="1548820036942" expanded="true" signature="8098:8495" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="8513:8684" ph="/// Sets the voxel at the given position. ... " />
-            <marker date="1548820036942" expanded="true" signature="8751:9552" ph="{...}" />
-            <marker date="1548820036942" expanded="false" signature="9589:12669" ph="Lighting Functions" />
-            <marker date="1548820036942" expanded="true" signature="9624:9716" ph="/// Gets sunlight value for a particular voxel. ... " />
-            <marker date="1548820036942" expanded="true" signature="9764:10345" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="10363:10455" ph="/// Sets sunlight value for a particular voxel. ... " />
-            <marker date="1548820036942" expanded="true" signature="10516:11121" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="11139:11234" ph="/// Gets block light value for a particular voxel. ... " />
-            <marker date="1548820036942" expanded="true" signature="11284:11867" ph="{...}" />
-            <marker date="1548820036942" expanded="true" signature="11885:11980" ph="/// Sets block light value for a particular voxel. ... " />
-            <marker date="1548820036942" expanded="true" signature="12043:12650" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/ChunkGameObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="68" column="73" selection-start-line="68" selection-start-column="73" selection-end-line="68" selection-end-column="73" />
-          <folding>
-            <marker date="1549346167708" expanded="false" signature="6:119" ph="..." />
-            <marker date="1549346167708" expanded="true" signature="154:4665" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="160:281" ph="/// Represents a chunk in the Unity game world. ... " />
-            <marker date="1549346167708" expanded="true" signature="331:4663" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="883:1405" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="1423:1499" ph="/// Chunk update event handler. ... " />
-            <marker date="1549346167708" expanded="true" signature="1537:1767" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="1785:1904" ph="/// Processes mesh result data and updates the mesh renderer and collider. ... " />
-            <marker date="1549346167708" expanded="true" signature="1965:2631" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="2423:2555" ph="/* Flag chunk light as dirty when we receive a mesh update ... */" />
-            <marker date="1549346167708" expanded="true" signature="2695:3943" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="2775:3080" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="2809:3065" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="3133:3439" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="3626:3698" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="4007:4657" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="4245:4460" ph="{...}" />
-            <marker date="1549346167708" expanded="true" signature="4520:4647" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/MeshData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <marker date="1549065312503" expanded="false" signature="6:52" ph="..." />
-            <marker date="1549065312503" expanded="true" signature="98:425" ph="{...}" />
-            <marker date="1549065312503" expanded="true" signature="127:423" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDictionary.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5070">
-          <caret line="173" column="35" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-          <folding>
-            <marker date="1549402402181" expanded="true" signature="64:8267" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="70:591" ph="/// Contains definitions and name-id mappings for all voxels in an instance of the game. ... " />
-            <marker date="1549402402181" expanded="true" signature="632:8265" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="804:909" ph="/// Returns the numerical ID linked to the given voxel name. ... " />
-            <marker date="1549402402181" expanded="true" signature="961:1017" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="1035:1229" ph="/// Initializes the voxel dictionary, registers the internal voxels, ... " />
-            <marker date="1549402402181" expanded="true" signature="1285:1517" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="1535:1643" ph="/// Registers all internal voxel definitions for the base game. ... " />
-            <marker date="1549402402181" expanded="true" signature="1697:8259" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="1821:7963" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="1882:2144" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="2224:2576" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="2655:3001" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="3081:3667" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="3746:4164" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="4245:4634" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="4720:5116" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="5196:5528" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="5616:5956" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="6038:6400" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="6486:6915" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="7008:7503" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="7583:7949" ph="{...}" />
-            <marker date="1549402402181" expanded="true" signature="8109:8249" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/MeshGeneration/ChunkUpdateWorker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13140">
-          <caret line="460" column="25" selection-start-line="460" selection-start-column="25" selection-end-line="460" selection-end-column="25" />
-          <folding>
-            <marker date="1551125131932" expanded="false" signature="6:268" ph="..." />
-            <marker date="1551125131932" expanded="true" signature="314:21972" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="320:480" ph="/// Generates a cubic mesh from a given chunk using naive meshing. ... " />
-            <marker date="1551125131932" expanded="true" signature="516:21970" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="607:916" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="1008:1192" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="1301:1541" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="1843:2037" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="3624:3882" ph="/// Creates a new simple cubes mesh extraction worker. ... " />
-            <marker date="1551125131932" expanded="true" signature="4019:4564" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="4582:4650" ph="/// Worker thread loop. ... " />
-            <marker date="1551125131932" expanded="true" signature="4683:8938" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="4761:8928" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="4814:8783" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="5265:5736" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="6071:6542" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="6717:6925" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="8820:8882" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="8956:9076" ph="/// Populates chunk buffer with the current chunk and any loaded neighbors. ... " />
-            <marker date="1551125131932" expanded="true" signature="9149:10271" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="9721:10261" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="10313:10438" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="10373:10428" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="10456:10588" ph="/// Generates a cube mesh from a given chunk and world. ... " />
-            <marker date="1551125131932" expanded="true" signature="10661:13967" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="10870:13518" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="10941:13504" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="11016:13486" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="11429:12346" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="11836:12208" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="12208:12320" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="12346:13069" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="13627:13957" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="13690:13943" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="13757:13925" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="13984:14072" ph="/// Adds relevant faces for a single voxel. ... " />
-            <marker date="1551125131932" expanded="true" signature="14162:21171" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="14657:21161" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="15476:16935" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="16183:16917" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="16935:17166" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="17930:19739" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="18091:18412" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="18412:18701" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="19739:20014" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="20116:20669" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="20365:20432" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="21213:21596" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="21367:21414" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="21667:21780" ph="{...}" />
-            <marker date="1551125131932" expanded="true" signature="21851:21964" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/Voxel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <marker date="1549221904794" expanded="true" signature="68:947" ph="{...}" />
-            <marker date="1549221904794" expanded="true" signature="71:143" ph="/// Represents a single voxel in a chunk. ... " />
-            <marker date="1549221904794" expanded="true" signature="204:945" ph="{...}" />
-            <marker date="1549221904794" expanded="true" signature="522:666" ph="/// Creates a new voxel with the specified properties. ... " />
-            <marker date="1549221904794" expanded="true" signature="693:942" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/RenderDepthTexture.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-          <folding>
-            <marker date="1549145135070" expanded="true" signature="53:238" ph="{...}" />
-            <marker date="1549145135070" expanded="true" signature="107:236" ph="{...}" />
-            <marker date="1549145135070" expanded="true" signature="141:230" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Voxels/VoxelDefinition.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <marker date="1549514816457" expanded="false" signature="6:56" ph="..." />
-            <marker date="1549514816457" expanded="true" signature="87:1708" ph="{...}" />
-            <marker date="1549514816457" expanded="true" signature="93:648" ph="/// Holds all general data for a particular voxel. ... " />
-            <marker date="1549514816457" expanded="true" signature="682:1706" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Chunks/LightMapping/ChunkLightMapper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <marker date="1549060589687" expanded="false" signature="6:126" ph="..." />
-            <marker date="1549060589687" expanded="true" signature="170:17601" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="176:258" ph="/// Handles lighting calculations for chunks. ... " />
-            <marker date="1549060589687" expanded="true" signature="293:17599" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="545:785" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="894:1044" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="1493:1847" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="1865:1987" ph="/// Updates the light map for a given chunk belonging to the specified world. ... " />
-            <marker date="1549060589687" expanded="true" signature="2059:4720" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="2632:2867" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="3004:3982" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="3712:3968" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="4098:4178" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="4397:4696" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="4449:4678" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="4505:4656" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="4738:4860" ph="/// Updates the light map for a given chunk belonging to the specified world. ... " />
-            <marker date="1549060589687" expanded="true" signature="4930:9816" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="5530:6070" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="6215:9280" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="6265:9266" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="7126:7460" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="7628:8612" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="8786:8931" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="8931:9248" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="9497:9792" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="9549:9774" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="9605:9752" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="9834:9932" ph="/// Propagates any light nodes in the addition queue. ... " />
-            <marker date="1549060589687" expanded="true" signature="9992:12444" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="10094:12434" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="10494:12420" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="12099:12402" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="12462:12560" ph="/// Propagates any light nodes in the addition queue. ... " />
-            <marker date="1549060589687" expanded="true" signature="12618:15506" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="12718:15496" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="13102:15482" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="14832:15464" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="14980:15101" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="15101:15307" ph="{...}" />
-            <marker date="1549060589687" expanded="false" signature="15524:17593" ph="Lightmap Functions" />
-            <marker date="1549060589687" expanded="true" signature="15612:15725" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="15735:15827" ph="/// Gets sunlight value for a particular voxel. ... " />
-            <marker date="1549060589687" expanded="true" signature="15875:16004" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="16022:16114" ph="/// Sets sunlight value for a particular voxel. ... " />
-            <marker date="1549060589687" expanded="true" signature="16172:16414" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="16432:16527" ph="/// Gets block light value for a particular voxel. ... " />
-            <marker date="1549060589687" expanded="true" signature="16578:16700" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="16718:16813" ph="/// Sets block light value for a particular voxel. ... " />
-            <marker date="1549060589687" expanded="true" signature="16895:17169" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="17187:17283" ph="/// Clears all block light data from the light map. ... " />
-            <marker date="1549060589687" expanded="true" signature="17319:17574" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="17382:17437" ph="{...}" />
-            <marker date="1549060589687" expanded="true" signature="17509:17564" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Components/WorldSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <marker date="1551125132767" expanded="false" signature="6:282" ph="..." />
-            <marker date="1551125132767" expanded="true" signature="317:4808" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="323:364" ph="///  ... " />
-            <marker date="1551125132767" expanded="true" signature="410:4806" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="1277:1737" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="1807:2892" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="2666:2767" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="2954:3006" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3070:3872" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3239:3311" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3497:3576" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3651:3862" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3718:3848" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="3960:4800" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="4125:4758" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="4255:4547" ph="{...}" />
-            <marker date="1551125132767" expanded="true" signature="4636:4703" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/VoxelEngine/Source/Textures/RuntimeTextureAtlas.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="170" column="12" selection-start-line="170" selection-start-column="12" selection-end-line="170" selection-end-column="24" />
-          <folding>
-            <marker date="1551123839222" expanded="false" signature="6:92" ph="..." />
-            <marker date="1551123839222" expanded="true" signature="125:11443" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="131:232" ph="/// Generates a texture atlas from individual texture per block. ... " />
-            <marker date="1551123839222" expanded="true" signature="270:11441" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="1416:2741" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="2759:2915" ph="/// Tries to fetch the texture from the cache before loading from disk. ... " />
-            <marker date="1551123839222" expanded="true" signature="2970:3535" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="3237:3450" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="3553:3631" ph="/// Generates the texture atlases ... " />
-            <marker date="1551123839222" expanded="true" signature="3669:11435" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="3780:8842" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="4777:6916" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="4913:6898" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="5302:5730" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="5730:6225" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="6916:8828" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="7397:7817" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="7817:8195" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="9489:10179" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="9738:10165" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="10421:10531" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="10587:10725" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="10781:10919" ph="{...}" />
-            <marker date="1551123839222" expanded="true" signature="10977:11115" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\derek\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\derek\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_VoxelEngine.-337743814.00" t="ExcludeRecursive" />
-    <e p="E:\Documents\GitHub\VoxelEngine" t="IncludeRecursive">
+    <e p="C:\Users\derek\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\derek\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_VoxelEngine.-1694483887.00" t="ExcludeRecursive" />
+    <e p="C:\Users\derek\Documents\GitHub\VoxelEngine" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -204,14 +204,12 @@
             <e p="DynamicShadowSettings.cs" t="Include" />
             <e p="EventSystemChecker.cs" t="Include" />
             <e p="FollowTarget.cs" t="Include" />
-            <e p="ForcedReset.cs" t="Include" />
             <e p="FOVKick.cs" t="Include" />
             <e p="FpsCounter.cs" t="Include" />
             <e p="LerpControlledBob.cs" t="Include" />
             <e p="ObjectResetter.cs" t="Include" />
             <e p="ParticleSystemDestroyer.cs" t="Include" />
             <e p="PlatformSpecificContent.cs" t="Include" />
-            <e p="SimpleActivatorMenu.cs" t="Include" />
             <e p="SimpleMouseRotator.cs" t="Include" />
             <e p="SmoothFollow.cs" t="Include" />
             <e p="TimedObjectActivator.cs" t="Include" />
@@ -285,7 +283,6 @@
                 <e p="ChunkUpdateJob.cs" t="Include" />
                 <e p="ChunkUpdateWorker.cs" t="Include" />
                 <e p="MeshData.cs" t="Include" />
-                <e p="TriangleIndex.cs" t="Include" />
               </e>
               <e p="VoxelUpdate.cs" t="Include" />
             </e>
@@ -325,12 +322,9 @@
           </e>
         </e>
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="VoxelEngine.sln" t="IncludeFlat" />
     </e>
   </component>

@@ -1,5 +1,5 @@
 namespace VoxelEngine.Voxels {
-    public enum VoxelType {
+    public enum VoxelType : byte {
         None,
         Solid,
         Liquid,

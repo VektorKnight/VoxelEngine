@@ -10,7 +10,7 @@ namespace VoxelEngine.Voxels {
     /// </summary>
     public static class VoxelDictionary {
         private static Dictionary<string, ushort> _idMapping = new Dictionary<string, ushort>();
-        public static  List<VoxelDefinition> VoxelData;
+        public static List<VoxelDefinition> VoxelData;
         
         /// <summary>
         /// Returns the numerical ID linked to the given voxel name.

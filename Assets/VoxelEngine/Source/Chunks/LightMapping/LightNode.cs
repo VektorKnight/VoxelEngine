@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace VoxelEngine.Chunks.LightMapping {
     [StructLayout(LayoutKind.Sequential)]
-    public struct LightNode {
+    public readonly struct LightNode {
         public readonly Vector3Int Position;
         public readonly Chunk Chunk;
 

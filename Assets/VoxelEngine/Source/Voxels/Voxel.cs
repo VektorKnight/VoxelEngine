@@ -5,7 +5,7 @@ namespace VoxelEngine.Voxels {
 	/// Represents a single voxel in a chunk.
 	/// </summary>
 	[StructLayout(LayoutKind.Sequential)]
-	public struct Voxel {
+	public readonly struct Voxel {
 		// Material ID of the voxel (0-65535)
 		public readonly ushort Id;
 		

@@ -3,7 +3,7 @@ using UnityEngine;
 using VoxelEngine.Chunks.LightMapping;
 
 namespace VoxelEngine.Chunks.MeshGeneration {
-    public struct ChunkUpdateJob {
+    public readonly struct ChunkUpdateJob {
         public readonly int Id;
         public readonly VoxelWorld World;
         public readonly Chunk Chunk;

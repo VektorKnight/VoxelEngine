@@ -1,7 +1,7 @@
 using UnityEngine;
 
 namespace VoxelEngine.Chunks.LightMapping {
-    public struct LightSource {
+    public readonly struct LightSource {
         public readonly Vector3Int Position;
         public readonly int Value;
 
