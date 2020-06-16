@@ -1,6 +1,21 @@
 # VoxelEngine
 Research into Minecraft-style voxel engines. Done primarily in Unity as the aim was to explore the data structures and algorithms more so than the lower-level internals of a game engine.
 
+## Current Features
+- Multithreaded chunk pipeline.
+- Rough atlas generation at runtime from individual textures.
+- Minecraft-style voxel lighting.
+
+## Planned Features
+- Smarter lighting and meshing routines.
+- World saving/loading with some sort of efficient data structure.
+- Basic mobs and interactable block entities.
+
+## Stretch Goals
+- Better world generation with caves, foliage, etc.
+- Basic multiplayer support with a dedicated server.
+- GPU-accelerated lighting/meshing (if possible).
+
 ## Update
 I've since picked this project back up with the aim of improving performance and fixing all the major bugs that currently exist.
 
